@@ -21,7 +21,7 @@ export default function Home() {
       <section className={styles.managementWork}>
         <h2>Working with management teams</h2>
         <p>A key differentiator of FirstDecimal UK is our active involvement in strategic oversight and support for management, in addition to raising capital. This approach enables us to contribute to value creation after the investment.</p>
-        <p>Once we identify a team, we fully support them in achieving their goals. Open communication is essential to ensure we always understand each other's positions.</p>
+        <p>Once we identify a team, we fully support them in achieving their goals. Open communication is essential to ensure we always understand each other&apos;s positions.</p>
         <p>The support we provide includes access to high-quality non-executive directors from a group of entrepreneurs with over 30 years of experience in acquiring, building, and managing startups and small to mid-sized businesses. They bring extensive expertise in raising capital, strategic planning, operational efficiency, and market expansion, ensuring our portfolio companies receive valuable insights and guidance to drive their growth and success.</p>
       </section>
       <section className={styles.smeSupport}>
