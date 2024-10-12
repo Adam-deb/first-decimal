@@ -83,7 +83,7 @@ export default function Home() {
         </div>
         <div className={styles.managementTeamMember}>
           <div className={styles.managementTeamImage} id={styles.hassanImage}>
-            <Image src="/hassan.png" height={300} width={300}/>
+            <Image src="/hassanImage.png" height={300} width={300}/>
           </div>
           <div className={styles.managementTeamText}>
             <h3>Hassan Saduddeen</h3>
