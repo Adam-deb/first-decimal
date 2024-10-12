@@ -1,97 +1,84 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer"; 
 import Link from "next/link";
 
 
 export default function Home() {
   return (
     <>
-    <Header/>
-    <main>
-      <section className={styles.hero}>
-        <div className={styles.heroText}>
-          <h1>Unleashing the potential of you and your business</h1>
-        </div>
-      </section>
-        <section className={styles.whoWeAre}>
-          <h2>Who are we?</h2>
-          <p>We are a group of entrepreneurs with over 30 years of experience in acquiring, building, and managing startups and small to mid-sized businesses. We specialize in adding value to new ideas and emerging companies. We bring capital, expertise, and a wealth of knowledge to support the success of new ventures.</p>
+      <Header/>
+      <main>
+        <section className={styles.hero}>
+          <div className={styles.heroText}>
+            <h1>Unleashing Your Business Potential</h1>
+            <p>Consulting services that help startups and SMEs secure funding, optimize operations, and scale faster.</p>
+          </div>
         </section>
-      <section className={styles.managementWork}>
-        <h2>Working with management teams</h2>
-        <p>A key differentiator of FirstDecimal UK is our active involvement in strategic oversight and support for management, in addition to raising capital. This approach enables us to contribute to value creation after the investment.</p>
-        <p>Once we identify a team, we fully support them in achieving their goals. Open communication is essential to ensure we always understand each other&apos;s positions.</p>
-        <p>The support we provide includes access to high-quality non-executive directors from a group of entrepreneurs with over 30 years of experience in acquiring, building, and managing startups and small to mid-sized businesses. They bring extensive expertise in raising capital, strategic planning, operational efficiency, and market expansion, ensuring our portfolio companies receive valuable insights and guidance to drive their growth and success.</p>
-      </section>
-      <section className={styles.smeSupport}>
-        <div className={styles.smeSupportHeading}>
-          <h2>Support for our SMEs</h2>
-          <p className={styles.smeSupportSubheading}>Leveraging our strong relationships with companies that support SMEs, we can provide immediate assistance to your business</p>
-        </div>
-        <div className={styles.smeSupportContainer}>
-          <div className={styles.smeProductContainer} id={styles.finance}>
-            <div className={styles.smeSupportIcon}>
-              <Image src="/finance.png" height={80} width={80}/>          
+
+        <section className={styles.whoWeAre}>
+          <h2>About FirstDecimal</h2>
+          <p>FirstDecimal is a leading consulting firm with over 30 years of expertise in supporting startups and SMEs. We specialize in securing funding, optimizing operations, and accelerating growth by leveraging strategic partnerships with industry leaders.</p>
+          <p>Our team brings a wealth of knowledge to help new ventures scale efficiently and successfully. We work closely with businesses to provide capital, smart solutions, and hands-on support.</p>
+        </section>
+
+        <section className={styles.partnerships}>
+          <h2>Strategic Partnerships</h2>
+          <p>At FirstDecimal, our partnerships provide businesses with a competitive edge through cutting-edge solutions:</p>
+          <div className={styles.partnershipsContainer}>
+            <div className={styles.partner}>
+              <Image src="/DF-logo-only.png" height={80} width={80}/> 
+              <h3>Funding Solutions with Decimal Factor</h3>
+              <p>Unlock alternative funding options tailored to your business needs with our partner, Decimal Factor.</p>
             </div>
-            <div className={styles.smeSupportText}>
-              <h3>Alternative Finance Brokers</h3>
-              <p>Our connections with alternative finance brokers facilitate access to diverse funding options, ensuring you find the right financial support tailored to your needs.</p>
+            <div className={styles.partner}>
+              <Image src="/tutum.png" height={80} width={80}/> 
+              <h3>Smart Property Security with Tutum</h3>
+              <p>Enhance your property’s security with cutting-edge smart security solutions from Tutum.</p>
             </div>
-          </div>
-          <div className={styles.smeProductContainer} id={styles.security}>
-            <div className={styles.smeSupportIcon}>
-              <Image src="/security.png" height={80} width={80}/>          
+            <div className={styles.partner}>
+              <Image src="/merchantServices.png" height={80} width={80}/> 
+              <h3>Smart POS</h3>
+              <p>Improve customer experiences and streamline transactions with smart POS systems.</p>
             </div>
-            <div className={styles.smeSupportText}>
-              <h3>Smart Property Security Providers</h3>
-              <p>Collaborating with smart property security providers enhances the safety and efficiency of your operations.</p>
-            </div>
-          </div>
-          <div className={styles.smeProductContainer} id={styles.merchantServices}>
-            <div className={styles.smeSupportIcon}>
-              <Image src="/merchantServices.png" height={80} width={80}/>          
-            </div>
-            <div className={styles.smeSupportText}>
-              <h3>Merchant Services and Smart POS Providers</h3>
-              <p>Partnerships with merchant services and smart POS providers streamline transactions and improve customer experiences.</p>
+            <div className={styles.partner}>
+              <Image src="/utilidex.png" height={80} width={80}/> 
+              <h3>Energy Optimization with Utilidex</h3>
+              <p>Reduce energy costs and boost efficiency with our energy management solutions from Utilidex.</p>
             </div>
           </div>
-          <div className={styles.smeProductContainer} id={styles.energyBills}>
-            <div className={styles.smeSupportIcon}>
-              <Image src="/energyBills.png" height={80} width={80}/>          
+        </section>
+
+        <section className={styles.managementTeam}>
+          <h2>Our Leadership Team</h2>
+          <div className={styles.managementTeamGrid}>
+            <div className={styles.managementTeamMember}>
+              <div className={styles.managementTeamImage}>
+                <Image src="/manoj.jpeg" height={200} width={200} alt="Manoj Karkhanis" />
+              </div>
+              <div className={styles.managementTeamText}>
+                <h3>Manoj Karkhanis</h3>
+                <p>
+                  Founder of Decimal Factor, Manoj led the company to become a leading credit brokerage firm in the UK and USA. His leadership has helped numerous SMEs secure funding and grow their businesses during challenging times.
+                </p>
+              </div>
             </div>
-            <div className={styles.smeSupportText}>
-              <h3>Smart Energy Management Providers</h3>
-              <p>Engaging with smart energy management providers helps you optimize energy usage, reducing costs and promoting sustainability.</p>
+            <div className={styles.managementTeamMember}>
+              <div className={styles.managementTeamImage}>
+                <Image src="/hassanImage.png" height={200} width={200} alt="Hassan Saduddeen" />
+              </div>
+              <div className={styles.managementTeamText}>
+                <h3>Hassan Saduddeen</h3>
+                <p>
+                  With over 27 years of fintech and SME lending experience, Hassan co-founded PayTabs and built a $100M payment gateway startup. He now drives innovation at Decimal Factor, focusing on digital payments and SME growth strategies.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className={styles.managementTeam}>
-        <div className={styles.managementTeamHeading}>
-          <h2>Meet our Team</h2>
-        </div> 
-        <div className={styles.managementTeamMember}>
-          <div className={styles.managementTeamText}>
-            <h3>Manoj Karkhanis</h3>
-            <p>In 2008, at the height of the financial crisis when no high street bank was willing to help small businesses, Manoj left the position of CEO to create Decimal Factor. Today, Decimal Factor has grown into a leading and recognised Credit Brokerage Firm in the UK & USA, regulated by the Financial Conduct Authority of UK (FCA).</p>
-          </div>
-          <div className={styles.managementTeamImage} id={styles.manojImage}>
-            <Image src="/manoj.jpeg" height={300} width={300}/>
-          </div>
-        </div>
-        <div className={styles.managementTeamMember}>
-          <div className={styles.managementTeamImage} id={styles.hassanImage}>
-            <Image src="/hassanImage.png" height={300} width={300}/>
-          </div>
-          <div className={styles.managementTeamText}>
-            <h3>Hassan Saduddeen</h3>
-            <p>Hassan brings over 27 years of expertise in digital payments, SMEs lending, and fintech innovation. As co-founder of PayTabs, he helped build a $100M payment gateway startup and has a deep understanding of both lender and broker perspectives. He has since joined Decimal Factor, where he has focused on enhancing the tech infrastructure and driving business growth.</p>
-          </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+      <Footer/>
     </>
   );
 }

@@ -196,7 +196,7 @@
     }
 
     .menuToggle {
-        display: block;
+        display: none; /*change this to block when I you add nav items */
         background: none;
         border: none;
         cursor: pointer;
@@ -299,8 +299,19 @@
     .navbar ul li ul li {
         border-top: none;
     }
+}
 
-    .rightMenu{
-        display:none;
+@media (max-width:450px){
+    .logoContainer a img{
+        height: 30px;
+        width: 150px;
+    }
+
+    .rightMenu a{
+        font-size: 12px;
+    }
+
+    .logoImage{
+        margin: 0;
     }
 }

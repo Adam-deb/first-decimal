@@ -1,187 +1,233 @@
-.hero{
+.hero {
   background-image: url(/heroImage.png);
-  background-position: center center;
+  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
-  height: 580px;
-  display:flex;
-  justify-content: center;
+  height: 560px;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
+  text-align: left;
 }
 
 .heroText{
-  color:white;
-  margin-left: 100px;
-  text-align: left;
-  width:500px;
-  margin-right: auto;
+  margin-left: 50px;
+  width:450px
 }
 
-.heroText h1{
+.heroText h1 {
+  font-size: 38px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.heroText p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #f0f0f0;
+  padding-right: 100px;
+}
+
+.whoWeAre {
+  padding: 50px 100px;
+}
+
+.whoWeAre h2 {
   font-size: 36px;
-  margin-bottom: 20px;
 }
 
-.companyDetailsContainer{
-  display:flex;
-  flex-direction: row;
-}
-
-.whoWeAre{
-  padding-left: 100px;
-  margin-top: 50px;
-  width:800px
-}
-
-.whoWeAre h2{
-  font-size: 32px;
-}
-
-.whoWeAre p{
-  font-size: 22px;
-  line-height: 1.5;
+.whoWeAre p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+  width:800px;
   margin-top: 30px;
 }
 
-.investmentCriteria{
-  max-width: 800px;
-  margin-top: 80px;
-  padding:20px;
-  background-color: #F4833D;
-  border-radius: 20px;
+.partnerships {
+  padding: 50px 100px;
+  background-color: #f9f9f9;
 }
 
-.investmentCriteria h2{
-  font-size: 24px;
+.partnerships h2{
+  font-size:36px;
   margin-bottom: 20px;
 }
 
-.investmentCriteria h3{
-  font-size: 18px
-}
-
-.investmentCriteria ul li{
-  list-style: inside;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.managementWork {
-  padding-right: 480px;
-  padding-left: 100px;
-  margin-top:50px
-}
-
-.managementWork h2{
-  font-size: 32px;
-}
-
-.managementWork p {
-  font-size: 22px;
-  line-height: 1.5;
-  margin-top: 30px
-}
-
-.managementTeam {
-  padding: 50px 100px
-}
-
-.managementTeamHeading h2{
-  font-size: 32px;
+.partnerships p{
   margin-bottom: 50px;
+}
+
+.partnershipsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.partner {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
   text-align: center;
 }
 
-.managementTeamMember{
-  display:flex;
-  align-items: center;
-  margin-top:50px;
-  background-color: rgba(238, 238, 238, 0.549);
-  padding:30px;
-  border-radius: 20px;
-}
-
-.managementTeamText h3{
-  font-size: 24px;
-  margin-bottom: 30px;
-}
-
-.managementTeamText p{
+.partner h3 {
   font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.managementTeam {
+  padding: 50px 100px;
+}
+
+.managementTeam h2 {
+  font-size: 36px;
+}
+
+.managementTeamMember {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .managementTeamImage img{
   border-radius: 20px;
 }
 
-#manojImage {
-  margin-left: 100px
-}
-
-#hassanImage{
-  padding-right: 100px;
-}
-
-.smeSupport{
-  padding:20px;
-  border-radius: 20px;
-  background-color: rgba(221, 221, 221, 0.665);
-  margin: 50px 100px;
-}
-
-.smeSupportHeading{
-  margin-bottom: 50px;
-}
-
-.smeSupportHeading h2{
-  font-size: 32px;
-  text-align: center;
+.managementTeamText h3 {
+  font-size: 24px;
   margin-bottom: 15px;
 }
 
-.smeSupportSubheading {
-  font-size: 22px;
-  text-align: center;
-  padding: 0 50px
+.managementTeamText p {
+  padding-right:100px
 }
 
-.smeSupportContainer{
-  display:grid;
-  grid-template-areas: "finance security" "merchantServices energyBills";
-  gap:15px
-
+.managementTeamImage {
+ margin:0 20px
 }
 
-#finance{
-  grid-area: "finance";
+@media (max-width: 1240px){
+  .heroText{
+    margin-left: 50px;
+    width:400px
+  }
 }
 
-#security{
-  grid-area: "security";
+@media (max-width: 1024px){
+  .heroText{
+    margin-left: 30px;
+  }
 }
 
-#merchantServices{
-  grid-area: "merchantServices";
-}
-
-#energyBills{
-  grid-area: "energyBills";
-}
-
-.smeProductContainer{
-  display:flex;
-  padding:20px;
-  background-color: white;
-  border-radius: 20px;
+@media (max-width: 960px){
+.hero{
+  background-image: url(/heroImageResize1.png);
   justify-content: center;
-  align-items: center;
 }
 
-.smeSupportIcon{
-  margin-right: 30px;
+.heroText{
+  margin-left:0;
+  text-align:center;
+  margin-top: 250px;
 }
 
-.smeSupportText h3{
-  margin-bottom: 10px;
+.heroText p{
+  padding-right:0
+}
+
+.whoWeAre {
+  text-align: center;
+  padding: 50px 50px;
+}
+
+.whoWeAre p {
+  width: auto
+}
+
+.partnerships{
+  text-align: center;
+}
+.managementTeamMember {
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align text to the left */
+}
+
+.managementTeamImage {
+  margin: 0 auto
+}
+
+.managementTeamText {
+  text-align: center; /* Center text for smaller screens */
+}
+
+.managementTeamText p {
+  padding:0 100px
+}
+
+.managementTeam h2{
+  text-align: center;
+}
+}
+
+@media (max-width:800px){
+  .managementTeamText p {
+    padding:0 50px
+  }
+}
+
+@media (max-width:650px){
+  .managementTeamText p {
+    padding:0
+  }
+}
+
+
+@media (max-width:530px){
+  .partnershipsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width:530px){
+  .partnershipsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width:454px){
+  .partner {
+    padding:10px
+  }
+
+  .partnerships{
+    padding: 50px 50px;
+  }
+
+  .managementTeam{
+    padding:50px 50px
+  }
+}
+
+@media (max-width:415px){
+  .heroText p{
+    padding: 0 10px;
+  }
+}
+
+@media (max-width:375px){
+  .heroText{
+    margin-top: 270px;
+  }
+  .heroText h1{
+    font-size:36px
+  }
+
+  .managementTeamImage img{
+    width:170px;
+    height:170px
+  }
 }
