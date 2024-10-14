@@ -79,7 +79,7 @@ export default function Header() {
           <div className={styles.rightMenu}>
             <a href="tel:448450946180">
               <Image src="/phoneIcon.png" width={20} height={20} alt="Phone Icon"/>
-              Contant us
+              Contact us
             </a>
           </div>
           <button className={styles.menuToggle} aria-label="Toggle navigation" onClick={toggleMenu}>
