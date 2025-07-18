@@ -39,13 +39,18 @@ export default function Home() {
             </div>
             <div className={styles.partner}>
               <Image src="/merchantServices.png" height={80} width={80}/> 
-              <h3>Smart POS</h3>
-              <p>Improve customer experiences and streamline transactions with smart POS systems.</p>
+              <h3>Next-Gen Merchant Services with Mswipe</h3>
+              <p>Simplify payments and accelerate sales with cutting-edge merchant solutions—online, in-store, and on-the-go.</p>
             </div>
             <div className={styles.partner}>
               <Image src="/utilidex.png" height={80} width={80}/> 
               <h3>Energy Optimization with Utilidex</h3>
               <p>Reduce energy costs and boost efficiency with our energy management solutions from Utilidex.</p>
+            </div>
+              <div className={styles.partner}>
+              <Image src="/triple-alfa-logo.png" height={80} width={80}/> 
+              <h3>Invest Beyond the Ordinary with Triple Alfa</h3>
+              <p>Access high-growth opportunities in exclusive alternative assets. Brining innovative tech to affluent investors.</p>
             </div>
           </div>
         </section>
